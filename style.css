@@ -3,30 +3,69 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Estilização universal */
+
+* {
+    font-family: "Bitter", serif;
+}
 
 /* Estilização do Plano de Fundo */
 
 body {
-    background-color:rgb(205, 211, 209);
+    background-color:#dfdfdf;
     display: flex;
     flex-direction: column;
     min-height: 100%;
 }
 
-/* Estilização do Header e dos Títulos */
+/* Estilização do Footer e dos Títulos  */
 
 h1, h2 {
-    color:rgb(99, 99, 99);
-    font-family: "Bitter", serif;
+    color:#757575;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
-/* Estilização do Nav (Itens do Menu) */
+/* Estilização do Menu */
 
-nav {
-    color:rgba(54, 54, 58, 0.89);
-    font-family: "Bitter", serif;
-    text-align: center;
+.main {
+    margin-left: 150px; 
+    padding: 0px 10px;
+}
+
+.menulateral {
+    background-color:#afafaf96;
+    height: 100%; 
+    left: 0;
+    overflow-x: hidden; 
+    padding-top: 20px;
+    position: fixed;
+    top: 0; 
+    width: 150px; 
+    z-index: 1; 
+}
+
+.menulateral a {
+    color:#666060;
+    display: block;
+    font-size: 25px;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+}
+
+.menulateral a:hover {
+    color:#f1f1f1;
+}
+
+.menulateral img {
+    bottom: 0%;
+    position: absolute;
+}
+
+@media screen and (max-height: 450px) {
+    .menulateral{padding-top: 15px;}
+    .menulateral a {font-size: 18px;}
 }
 
 /* Estilização do Título destacado sobre o Assunto do Site com Imagem do Fundo */
@@ -38,6 +77,7 @@ nav {
     border-width: 14px;
     height: 480px;  
     margin: auto;
+    position: relative;
     width: 500px;
 }
 
@@ -46,23 +86,20 @@ nav {
 }
 
 #engalimentos { /* Texto sobreposto na imagem principal do site */
-    background-color:rgba(121, 120, 120, 0.74);
-    bottom: 33%;
-    color:rgb(248, 243, 243);
-    font-family: "Bitter", serif;
+    background-color:rgb(121, 120, 120);
+    color:rgb(247, 243, 243);
     font-size: 30px;
-    font-style: italic;
     font-weight: bolder;
-    left: 33%;
-    position: absolute;
-    text-align: center;
+    left: 8%;
+    position: absolute; /* Eu usei position absolute o título ficasse condicionado a section conteiner */
+    text-align: justify;
+    top: 45%;
 }
 
 /* Estilização das Imagens do Site */
 
 #figcaption { /* Legenda da imagem "Alimentos Saudáveis" */   
     display: flex;
-    font-family: "Bitter", serif;
     font-size: 13px;
     margin-top: 48%; 
     text-align: center;
@@ -77,12 +114,11 @@ nav {
     width: 500px;   
 }
 
-#figure:hover { /* Troca de imagens ao passar o mouse em cima */
+#figure:hover { /* Troca de imagens ao passar o cursor em cima */
     background-image: url("Imagens - Página Inicial/Alimentos Saudáveis 2.jpg"); 
 }    
 
 figcaption { 
-    font-family: "Bitter", serif;
     font-size: 13px;
     text-align: center;
 }
@@ -106,24 +142,25 @@ figure { /* Figuras do site */
                   
 #contato { /* Criei um id, porque foi o único parágrafo que utilizei essas propriedades com esses valores */      
     color:black;
-    font-family: "Bitter", serif;
     font-size: large;
-    margin-top: 1%;
+    margin-top: 1.5%;
     text-align: center;
 }
 
 a {
-    color:rgba(54, 54, 58, 0.877);
-    font-family: "Bitter", serif;
+    color:rgb(7, 126, 236);
+    font-weight: 400;
     text-align: center;
 }
 
-form { /* Estilização do formulário com a fonte padrão que escolhi para o site */
-    font-family:"Bitter", serif;
+/* Estilização do formulário*/
+
+form { 
+    font-size: 17px;
     text-align: center;
 }
 
-html {
+html { 
     height: 100%;
 }
 
@@ -131,7 +168,7 @@ html {
     color:black;
     display: flex;
     flex-direction: column;
-    font-family: "Bitter", serif;
+    font-size: 17px;
     justify-content: center;
     text-align: center;
 }
@@ -139,16 +176,16 @@ html {
 p {
     color:black;
     display: inline-block;
-    font-family: "Bitter", serif;
+    font-size: 17px;
     margin: 0.5%;
     text-align: justify;
 }
 
 footer {   
     color:black;
-    font-family: "Bitter", serif;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 150px; 
     margin-top: auto;
     text-align: center;
 }
-
-
