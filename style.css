@@ -171,7 +171,7 @@ a {
     flex-direction: column;
     width: 700px;
 }
-
+ 
 .form_box button {
     background-color: #666060;
     border: none;
@@ -199,6 +199,10 @@ a {
     padding: 32px;
 }
 
+.form_box h2 {
+    margin-bottom: 0;
+}
+ 
 .form_box input, .form_box textarea {
     border: thin solide #cccc;
     border-radius: 8px;
