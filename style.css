@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Estilização universal */
+/* Estilização universal para a fonte */
 
 * {
     font-family: "Bitter", serif;
@@ -183,6 +183,7 @@ a {
     font-weight: bold;
     height: 48px;
     margin-left: 400px;
+    margin-top: 1%;
     outline: none;
     width: 180px;
 }
@@ -204,6 +205,7 @@ a {
     font-size: 16px;
     height: 48px;
     margin-left: 16px;
+    margin-top: 1%;
     padding-left: 16px;
     width: calc(50% -8px);
 }
@@ -212,12 +214,13 @@ a {
     margin-right: 16px;
 }
 
-.form_box input[name=subject] {
+.form_box input[name=assunto] {
     width: 100%;
 }
 
 .form_box textarea {
     height: 180px;
+    margin-top: 1%;
     padding: 16px;
     width: 100%;
 }
