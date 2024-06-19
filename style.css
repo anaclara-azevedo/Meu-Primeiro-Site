@@ -155,7 +155,7 @@ a {
 
 /* Estilização do formulário*/
 
-.form {
+.form { 
     align-items: center;
     display: flex;
     height: 100%;
@@ -176,12 +176,13 @@ a {
     background-color: #666060;
     border: none;
     border-radius: 8px;
-    color: #f1f1f1;
+    color: #fffcfc;
     cursor: pointer;
     display: block;
     font-size: 16px;
     font-weight: bold;
     height: 48px;
+    margin-left: 400px;
     outline: none;
     width: 180px;
 }
