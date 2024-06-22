@@ -6,168 +6,187 @@
 /* Estilização universal para a fonte */
 
 * {
+    box-sizing: border-box;
     font-family: "Bitter", serif;
 }
 
 /* Estilização do Plano de Fundo */
 
 body {
-    background-color:#dfdfdf;
+    background-color:#cfcfcfd0;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    margin: auto;
     min-height: 100%;
 }
 
-/* Estilização do Footer e dos Títulos  */
+/* Estilização das tags a, do documento html e do parágrafo */
+
+a {
+    color:rgba(7, 79, 235, 0.808);
+    font-weight: 500;
+    text-align: center;
+}
+
+html { 
+    height: 100%;
+}
+
+p {
+    color:black;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0.5% ;
+    text-align: justify;
+}
+
+/* Estilização dos Títulos  */
 
 h1, h2 {
     color:#757575;
-    display: flex;
-    justify-content: center;
     text-align: center;
 }
 
-/* Estilização do Menu */
+/* Estilização do Header da Home */
 
-.main {
-    margin-left: 150px; 
-    padding: 0px 10px;
-}
-
-.menulateral {
-    background-color:#afafaf96;
-    height: 100%; 
-    left: 0;
-    overflow-x: hidden; 
-    padding-top: 20px;
-    position: fixed;
-    top: 0; 
-    width: 150px; 
-    z-index: 1; 
-}
-
-.menulateral a {
-    color:#666060;
-    display: block;
-    font-size: 25px;
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-}
-
-.menulateral a:hover {
-    color:#f1f1f1;
-}
-
-.menulateral img {
-    bottom: 0%;
-    position: absolute;
-}
-
-@media screen and (max-height: 450px) {
-    .menulateral{padding-top: 15px;}
-    .menulateral a {font-size: 18px;}
-}
-
-/* Estilização do Título destacado sobre o Assunto do Site com Imagem do Fundo */
-
-#conteiner { /* Imagem principal do site */
-    background-image: url("Imagens - Página Inicial/Engrenagem.jpg");
+.cabecalho {
+    background-image: url("Imagens - Página Inicial/photo-1490818387583-1baba5e638af.avif");
     background-repeat: no-repeat;
-    border-radius: 50%;
-    border-width: 14px;
-    height: 480px;  
-    margin: auto;
-    position: relative;
-    width: 500px;
+    height: 100vh;
 }
 
-#conteiner:hover { /* Completa a imagem principal do site */
-    border-radius: 0%;
-}
-
-#engalimentos { /* Texto sobreposto na imagem principal do site */
-    background-color:rgb(121, 120, 120);
-    color:rgb(247, 243, 243);
-    font-size: 30px;
+.engalimentos { /* Texto sobreposto na imagem principal do site */
+    color:#666060;
+    font-size: 53px;
     font-weight: bolder;
-    left: 8%;
-    position: absolute; /* Eu usei position absolute o título ficasse condicionado a section conteiner */
+    left: 40%;
+    margin-top: 10%;
+    position: absolute; /* Eu usei position absolute o título ficasse condicionado a section 1 */
     text-align: justify;
-    top: 45%;
 }
 
-/* Estilização das Imagens do Site */
+.li-menu {
+    margin: 0 15px;
+}
 
-#figcaption { /* Legenda da imagem "Alimentos Saudáveis" */   
+.li-menu a {
+    color: #757272;
+    font-size: 24px;
+}
+
+.li-menu a:hover {
+    color: #000000;
+}
+
+.logo-cabecalho {
+    height: 90px;
+    width: 90px;
+}
+
+.menu {
+    align-items: center;
     display: flex;
-    font-size: 13px;
-    margin-top: 48%; 
-    text-align: center;
+    justify-content: space-around;
+    margin: auto 30px;
 }
 
-#figure { 
+.paragrafo1 {
+    font-size: 20px;
+    left: 40%;
+    margin-top: 17%;
+    position: absolute;
+    text-align: justify;
+    width: 55%;
+}
+
+.section1 {
+    position: relative;
+}
+
+.ul-menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+/* Estilização da Section 2 */
+
+.figure { 
     background-image: url("Imagens - Página Inicial/Alimentos Saudáveis.jpg");
     background-repeat: no-repeat;
+    display: flex;
     height: 240px; 
     margin-left: auto;
     margin-right: auto;
     width: 500px;   
 }
 
-#figure:hover { /* Troca de imagens ao passar o cursor em cima */
+.figure:hover { /* Troca de imagens ao passar o cursor em cima */
     background-image: url("Imagens - Página Inicial/Alimentos Saudáveis 2.jpg"); 
-}    
+}   
 
+.paragrafo2 {
+    font-size: 18px;
+    width: 50%;
+}
+
+.section2 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Estilização das imagens com legenda */
+   
 figcaption { 
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0.5%;
     text-align: center;
 }
 
-figure { /* Figuras do site */
+figure {
     align-items: center;
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
-} 
+}            
 
-/* Estilização do Áudio, do Mapa e do Vídeo */
+/* Vídeo e links com botões externos */
 
-.div {
+.video {
+    align-items: center;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: center;  
 }
 
-/* Estilização do Conteúdo do Site */
-                  
-#contato { /* Criei um id, porque foi o único parágrafo que utilizei essas propriedades com esses valores */      
-    color:black;
-    font-size: large;
-    margin-top: 1.5%;
+li {
+    font-size: 19px;
+    list-style: none;
     text-align: center;
+    padding: 20px;
 }
 
-a {
-    color:rgb(7, 126, 236);
-    font-weight: 400;
-    text-align: center;
-}
-
-/* Estilização do formulário*/
+/* Aba Contato */
 
 .form { 
     align-items: center;
     display: flex;
     height: 100%;
     justify-content: center;
-    margin-left: 250px;
-    width: 100vh;
+    padding: 30px;
+    width: 100%;
 }
 
 .form_box {
     background-color: #f1f1f1;
     border-radius: 8%;
     display: flex;
+    height: 430px;
     flex-direction: column;
     width: 700px;
 }
@@ -181,10 +200,11 @@ a {
     display: block;
     font-size: 16px;
     font-weight: bold;
-    height: 48px;
-    margin-left: 400px;
-    margin-top: 1%;
+    height: 40px;
+    margin-left: 460px;
+    margin-top: 47%;
     outline: none;
+    position: absolute;
     width: 180px;
 }
 
@@ -196,25 +216,26 @@ a {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    padding: 32px;
+    padding: 30px;
+    position: relative;
 }
 
 .form_box h2 {
-    margin-bottom: 0;
+    color: #666060; 
 }
  
 .form_box input, .form_box textarea {
     border: thin solide #cccc;
     border-radius: 8px;
     font-size: 16px;
-    height: 48px;
+    height: 40px;
     margin-left: 16px;
     margin-top: 1%;
     padding-left: 16px;
     width: calc(50% -8px);
 }
 
-.form_box input: first-child {
+.form_box input:first-child {
     margin-right: 16px;
 }
 
@@ -235,32 +256,32 @@ a {
     padding: 24px 32px;
 }
 
-html { 
-    height: 100%;
-}
+/* Aba Local */
 
-.p { /* Estilização do parágrafo que contém os botões com links externos */
-    color:black;
+.local {
+    align-items: baseline;
     display: flex;
-    flex-direction: column;
-    font-size: 17px;
     justify-content: center;
-    text-align: center;
 }
 
-p {
-    color:black;
-    display: inline-block;
-    font-size: 17px;
-    margin: 0.5%;
-    text-align: justify;
+/* Botão voltar ao topo */
+
+.back {
+    align-items: center;
+    color: #f1f1f1;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    right: 10px;
 }
+
+/* Estilização do Rodapé */
 
 footer {   
-    color:black;
-    font-size: 17px;
+    color:#000000;
+    font-size: 20px;
     font-weight: 500;
-    margin-left: 150px; 
     margin-top: auto;
     text-align: center;
 }

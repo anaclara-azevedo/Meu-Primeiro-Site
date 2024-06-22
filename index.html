@@ -1,120 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Primeiro Site</title>
-  <link rel="shortcut icon" href="Logo do Site/Logo do Site.ico" type="image/x-icon"> <!--Logotipo-->
-  <link rel="stylesheet" href="style.css"> <!--CSS Externo-->
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Meu Primeiro Site</title>
+   <link rel="shortcut icon" href="Logo do Site/Logo do Site.ico" type="image/x-icon"> <!--Logotipo-->
+   <link rel="stylesheet" href="style.css"> <!--CSS Externo--> 
+  </head>
+  <body>
+
+    <header class="cabecalho">
+
+      <nav class="menu">
+          
+          <img class="logo-cabecalho" src="Menu/Logo do Site.png" alt="Logo do Site">
+          <ul class="ul-menu">
+           <li class="li-menu"><a target="_blank" href="index.html">Home</a></li>
+           <li class="li-menu"><a target="_blank" href="contato.html">Contato</a></li>
+           <li class="li-menu"><a target="_blank" href="local.html">Local</a></li>
+          <ul>
+      </nav>
+
+      <section class="section1">
+
+        <h1 class="engalimentos">ENGENHARIA DE ALIMENTOS</h1> 
+
+       <p class="paragrafo1">É uma área multidisciplinar de Engenharia que estuda os processos de produção de alimentos industrializados, desde a matéria-prima até o consumidor final. 
+        É considerada multidisciplinar, porque abrange diversas áreas como a Engenharia, a Química e a Microbiologia e suas aplicações.
+       </p>
+
+      </section>
+
+    </header>
   
-</head>
-
-<body>
-
-  <header>
-
-     <div class="menulateral"> <!--Menu-->
-
-      <a href="index.html">Home</a><br>
-      <a target="_blank" href="contato.html">Contato</a><br>
-      <a target="_blank" href="local.html">Local</a><br>
-      <img src="Menu/Logo do Site.png" alt="Logo do site" height="150px" width="150px">
-
-     </div>
-
-  </header>
-  
-  <div class="main">
-   
     <main>
 
-    <br>
+      <h2>Engenharia de Alimentos é tipo "Nutrição"?</h2>
 
-    <section id="conteiner"> <!--Título destacado sobre o assunto do site com imagem do fundo-->
-
-      <div id="engalimentos">ENGENHARIA DE ALIMENTOS</div> 
-
-    </section>
-
-    <!--Trecho de texto com plano de fundo colorido-->
-
-    <p>É uma área multidisciplinar de Engenharia que estuda os processos de produção de alimentos industrializados, desde a matéria-prima até o consumidor final. 
-     É considerada multidisciplinar, porque abrange diversas áreas como a Engenharia, a Química e a Microbiologia e suas aplicações.
-    </p>
-
-    <h2>Engenharia de Alimentos é tipo "Nutrição"?</h2>
+      <section class="section2">
     
-    <figure id="figure"> <!--Imagens com descrição-->
+        <div class="figure"> </div>
+    
+        <!--Trecho de texto com plano de fundo colorido-->
+    
+        <p class="paragrafo2"> A resposta é não. Ambas as áreas são extremamente importantes e possuem foco de estudo no mesmo objeto: o alimento, entretanto, um engenheiro de alimentos atua em áreas como Pesquisa e Desenvolvimento de um novo produto, Conservação, Armazenamento e Transporte de alimentos.
+         Ele é o responsável por garantir que o alimento industrializado mantenha sua qualidade até chegar ao consumidor final. 
+         Já o profissional de nutrição estuda as propriedades dos alimentos ingeridos pelos seres humanos, a fim de estabelecer o equilíbrio do organismo e mantê-lo saudável.
+         De uma forma simplória, o engenheiro de alimentos cuida dos alimentos "da boca para fora", já o nutricionista, "da boca para dentro".
+        </p>
+
+      </section>
+
+      <section>
       
-     <figcaption id="figcaption">Alimentos Saudáveis. Fonte: Shutterstock.</figcaption>
+       <h2>Qual a importância de um Engenheiro de Alimentos?</h2>
 
-    </figure>
+       <figure> <!--Imagens com descrições-->
 
-    <!--Trecho de texto com plano de fundo colorido-->
+       <img src="Imagens - Página Inicial/Engenheira de Alimentos.jpg" alt="Engenheira de Alimentos" height="300px" width="500px">
+       <figcaption>Engenheira de Alimentos. Fonte: FreePik.</figcaption>
 
-    <p>A resposta é não. Ambas as áreas são extremamente importantes e possuem foco no mesmo objeto de estudo: o alimento, entretanto, um engenheiro de alimentos atua em áreas como Pesquisa e Desenvolvimento de um novo produto, Conservação, Armazenamento e Transporte de alimentos.
-     Ele é o responsável por garantir que o alimento industrializado mantenha sua qualidade até chegar ao consumidor final. 
-     O profissional de nutrição estuda as propriedades dos alimentos ingeridos pelos seres humanos, a fim de estabelecer o equilíbrio do organismo e mantê-lo saudável.
-     De uma forma simplória, o engenheiro de alimentos cuida dos alimentos "da boca para fora", já o nutricionista, "da boca para dentro".
-    </p>
+       </figure>
 
-    <h2>Qual a importância de um Engenheiro de Alimentos?</h2>
+       <!--Trecho de texto com plano de fundo colorido-->
 
-    <figure> <!--Imagens com descrições-->
-
-      <img src="Imagens - Página Inicial/Engenheira de Alimentos.jpg" alt="Engenheira de Alimentos" height="300px" width="500px">
-      <figcaption>Engenheira de Alimentos. Fonte: FreePik.</figcaption><br>
-
-      <img src="Imagens - Página Inicial/Produção de Cerveja.jpg" alt="Produção de Cerveja" height="400px" width="500px">
-      <figcaption>Produção de Cerveja. Fonte: FreePik.</figcaption>
-
-    </figure>
-
-    <!--Trecho de texto com plano de fundo colorido-->
-
-    <p>Como dito anteriormente, a responsabilidade do engenheiro de alimentos é garantir a qualidade e a segurança alimentar.
-     Através de análises físico-químicas e microbiológicas em alimentos, é capaz de identificar a composição química, as características nutricionais, as propriedades físico-químicas e os microrganismos presentes. Dessa forma, determina se o alimento está de acordo com os parâmetros previstos pela legislação vigente.
-     As <a target="_blank" href="https://educacao.rs.gov.br/upload/arquivos/202005/11141300-capacitacao-boas-praticas.pdf">Boas Práticas de Fabricação (BPF)</a> e os <a target="_blank" href="https://www.gov.br/servidor/pt-br/siass/centrais_conteudo/manuais/resolucao-rdc-anvisa-n-275-de-21-de-outubro-de-2002.pdf/view">Procedimentos Operacionais Padrões (POPs)</a> também são fundamentais, pois são medidas e procedimentos adotados para assegurar a correta manipulação de alimentos, evitando o risco de contaminação por uma DTA (DTA - Doença Transmitida por Alimento).
-     Dependendo da gravidade da situação, a contaminação pode levar à morte, acarretando graves consequências. E o que fazer em casos delicados como esses?
-    </p>
-
-    <p>
-     O ideal é que nunca ocorram. Existem ferramentas na gestão da qualidade que devem ser utilizadas e um bom exemplo delas é a Rastreabilidade de Alimentos, definida pela <a target="_blank" href="https://www.gov.br/anvisa/pt-br">ANVISA</a> (Agência Nacional de Vigilância Sanitária) como "o conjunto de procedimentos que permite detectar a origem e acompanhar a movimentação de um produto ao longo de sua cadeia produtiva, mediante elementos informativos e documentais registrados".
-     Ela permite a detecção do lote de fabricação, a fim de identificar quaisquer irregularidades rapidamente. 
-     Outra ferramenta importante é o Mapeamento de Processos, ele representa graficamente o fluxo do processo de forma detalhada, facilitando a visualização das etapas que estão causando problema no alimento.
-     A engenharia de alimentos é uma profissão que impacta a saúde das pessoas e o(a) engenheiro(a) de alimentos deve atuar com comprometimento e seriedade.
-     Independente da área de atuação, a qualidade e a excelência devem sempre estar em primeiro lugar.
-    </p>
-
-    <h2>Ficou curioso(a) sobre o assunto? Saiba mais</h2>
-
-    <div class="div"> <!--Vídeo-->
-
-      <iframe height="300" width="500" src="https://www.youtube.com/embed/TZHXQfXdlIw?si=sYOO-WLIGB-tDWhl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
-   
-    </div>
-
-    <p class="p"> <!--Botões com links externos-->
-
-     <a target="_blank" href="https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/alimentos/manuais-guias-e-orientacoes/cartilha-boas-praticas-para-servicos-de-alimentacao.pdf">Manual de Boas Práticas - RDC 216</a><br>
-
-     <a target="_blank" href="https://foodsafetybrazil.org/10-passos-essenciais-para-o-mapeamento-de-processos-na-industria-de-alimentos/">Mapeamento de Processos</a><br>
-
-     <a target="_blank" href="http://www.uesb.br/noticias/que-profissao-e-essa-o-engenheiro-de-alimentos-e-os-processos-ate-o-alimento-chegar-na-mesa/">O que faz um Engenheiro de Alimentos?</a><br>
-
-     <a target="_blank" href="https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html">Resolução Nº 216</a>
+       <p>A responsabilidade do engenheiro de alimentos é garantir a qualidade e a segurança alimentar.
+       Através de análises físico-químicas e microbiológicas em alimentos, é capaz de identificar a composição química, as características nutricionais, as propriedades físico-químicas e os microrganismos presentes. Dessa forma, determina se o alimento está de acordo com os parâmetros previstos pela legislação vigente.
+       As <a target="_blank" href="https://educacao.rs.gov.br/upload/arquivos/202005/11141300-capacitacao-boas-praticas.pdf">Boas Práticas de Fabricação (BPF)</a> e os <a target="_blank" href="https://www.gov.br/servidor/pt-br/siass/centrais_conteudo/manuais/resolucao-rdc-anvisa-n-275-de-21-de-outubro-de-2002.pdf/view">Procedimentos Operacionais Padrões (POPs)</a> também são fundamentais, pois são medidas e procedimentos adotados para assegurar a correta manipulação de alimentos, evitando o risco de contaminação por uma DTA (DTA - Doença Transmitida por Alimento).</p>
     
-    </p>
+       <p>O ideal é que nunca ocorram. Existem ferramentas na gestão da qualidade que devem ser utilizadas e um bom exemplo delas é a Rastreabilidade de Alimentos, definida pela <a target="_blank" href="https://www.gov.br/anvisa/pt-br">ANVISA</a> (Agência Nacional de Vigilância Sanitária) como "o conjunto de procedimentos que permite detectar a origem e acompanhar a movimentação de um produto ao longo de sua cadeia produtiva, mediante elementos informativos e documentais registrados".
+       Ela permite a detecção do lote de fabricação, a fim de identificar quaisquer irregularidades rapidamente. 
+       Outra ferramenta importante é o Mapeamento de Processos, ele representa graficamente o fluxo do processo de forma detalhada, facilitando a visualização das etapas que estão causando problema no alimento.
+       A engenharia de alimentos é uma profissão que impacta a saúde das pessoas e o(a) engenheiro(a) de alimentos deve atuar com comprometimento e seriedade.
+       Independente da área de atuação, a qualidade e a excelência devem sempre estar em primeiro lugar.</p>
 
-    <div id="contato">Entre em contato comigo por <a target="_blank" href="contato.html">aqui</a></div><br> <!--Botão com link interno-->
+      </section>
+      
+      <h2>Ficou curioso(a) sobre o assunto? Saiba mais</h2> 
 
-    <div class="div"><audio src = "Áudio/Paramore - Crave.mp3" controls> Som </audio></div><br> <!--Áudio-->
+      <section class="video"> <!--Vídeo-->
 
-   </main>
-  </div>
+        <iframe height="300" width="500" src="https://www.youtube.com/embed/TZHXQfXdlIw?si=sYOO-WLIGB-tDWhl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+    
+        <ul>
+        
+         <li> <a target="_blank" href="https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/alimentos/manuais-guias-e-orientacoes/cartilha-boas-praticas-para-servicos-de-alimentacao.pdf">Manual de Boas Práticas - RDC 216</a></li><br>
 
-  <footer>Criado por Ana Clara Azevedo 🦋</footer> <!--Rodapé com a frase criado por "seunome"-->
+         <li><a target="_blank" href="https://foodsafetybrazil.org/10-passos-essenciais-para-o-mapeamento-de-processos-na-industria-de-alimentos/">Mapeamento de Processos</a></li><br>
 
-</body>
+         <li><a target="_blank" href="http://www.uesb.br/noticias/que-profissao-e-essa-o-engenheiro-de-alimentos-e-os-processos-ate-o-alimento-chegar-na-mesa/">O que faz um Engenheiro de Alimentos?</a></li><br>
+
+         <li><a target="_blank" href="https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html">Resolução Nº 216</a></li><br>
+        
+        </ul>
+
+      </section>
+
+    </main>
+
+    <a class="back" href="#" title="Voltar ao topo"><img src="Imagens - Página Inicial/Seta.png" alt="Voltar ao topo" height="60px" width="60px"></a>
+
+    <footer>Criado por Ana Clara Azevedo 🦋</footer> <!--Rodapé com a frase criado por "seunome"-->
+
+  </body>
 </html>
