@@ -13,7 +13,7 @@
 /* Estilização do Plano de Fundo */
 
 body {
-    background-color:#cfcfcfd0;
+    background-color:#e6e6e6ab;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@ body {
 /* Estilização das tags a, do documento html e do parágrafo */
 
 a {
-    color:rgba(7, 79, 235, 0.808);
+    color:rgba(59, 0, 197, 0.911);
     font-weight: 500;
     text-align: center;
 }
@@ -80,8 +80,8 @@ h1, h2 {
 }
 
 .logo-cabecalho {
-    height: 90px;
-    width: 90px;
+    height: 80px;
+    width: 80px;
 }
 
 .menu {
@@ -183,7 +183,7 @@ li {
 }
 
 .form_box {
-    background-color: #f1f1f1;
+    background-color: #fafafa;
     border-radius: 8%;
     display: flex;
     height: 430px;
