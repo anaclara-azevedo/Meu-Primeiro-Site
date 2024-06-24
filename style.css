@@ -14,11 +14,11 @@
 
 body {
     background-color:#e6e6e6;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    margin: auto;
-    min-height: 100%;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
     scroll-behavior: smooth;
 }
 
@@ -27,7 +27,6 @@ body {
 a {
     color:rgba(59, 0, 197, 0.911);
     font-weight: 500;
-    c
 }
 
 html { 
@@ -37,6 +36,7 @@ html {
 
 iframe, img {
     border-radius: 8px;
+
 }
 
 /* Estilização das legendas das imagens */
@@ -57,8 +57,9 @@ h1, h2 {
 /* Estilização do Header */
 
 .cabecalho {
-    background-image: url("Imagens - Página Inicial/Alimentos.jpg");
+    background-image: url("Imagens/Página Inicial/Alimentos.jpg");
     background-repeat: no-repeat;
+    background: cover;
     height: 100vh;
     position: relative;
     width: 100%;
@@ -103,7 +104,7 @@ h1, h2 {
 /* Estilização da Section 2 e da Section 3 */
 
 .alimentos { 
-    background-image: url("Imagens - Página Inicial/Alimentos Saudáveis.jpg");
+    background-image: url("Imagens/Página Inicial/Alimentos Saudáveis.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 8px;
@@ -112,7 +113,7 @@ h1, h2 {
 }
 
 .alimentos:hover { /* Troca de imagens ao passar o cursor em cima */
-    background-image: url("Imagens - Página Inicial/Alimentos Saudáveis 2.jpg"); 
+    background-image: url("Imagens/Página Inicial/Alimentos Saudáveis 2.jpg"); 
     transition: 1.5s;
 }   
 
@@ -242,7 +243,7 @@ li {
 /* Botão voltar ao topo */
 
 #btnTopo {   
-    bottom: 20px; /* Distância do fundo da página */
+    bottom: 20px; /* Distância do final da página */
     background-color: #e6e6e6;
     border-color: #727272;
     border-style: solid;
