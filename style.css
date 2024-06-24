@@ -38,7 +38,6 @@ html {
 figcaption { 
     font-size: 15px;
     font-weight: 500;
-    margin-top: 0.5%;
     text-align: center;
 }
 
@@ -55,41 +54,42 @@ h1, h2 {
     background-image: url("Imagens - Página Inicial/Alimentos.jpg");
     background-repeat: no-repeat;
     height: 100vh;
+    position: relative;
+    width: 100%;
 }
 
 .engalimentos { 
     color:#666060;
     font-size: 60px;
     font-weight: bolder;
-    left: 20%;
+    margin-left: 35%;
     margin-top: 4%;
-    position: absolute; /* Eu usei position absolute o título ficasse condicionado a section 1 */
     text-align: justify;
+    width: 100%;
 }
 
 .li-menu {
-    margin: 0 15px;
+    margin: 0 30px;
 }
 
 .logo-cabecalho {
     height: 80px;
-    width: 80px;
+    width: 80px;   
 }
 
 .menu {
     align-items: center;
     display: flex;
     justify-content: space-around;
-    margin: auto 30px;
+    margin: auto 40px;
 }
 
 .section1 {
-    position: relative;
+    position: absolute; /* Eu usei position absolute o título ficasse condicionado a header */
 }
 
 .ul-menu {
     display: flex;
-    flex-direction: row;
     list-style: none;
 }
 
@@ -105,12 +105,11 @@ h1, h2 {
 
 .alimentos:hover { /* Troca de imagens ao passar o cursor em cima */
     background-image: url("Imagens - Página Inicial/Alimentos Saudáveis 2.jpg"); 
-    transition: 0.5s;
+    transition: 1.5s;
 }   
 
 .paragrafo1 {
-    display: flex;
-    font-size: 19px;
+    font-size: 18px;
     text-align: justify;
     width: 50%;
 }
@@ -125,15 +124,10 @@ h1, h2 {
 .section2, .section3, .section4 {
     align-items: center;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: center; 
 }
             
 /* Estilização da Section 4 */
-
-.video {
-    display: flex;
-}
 
 li {
     font-size: 19px;
@@ -156,7 +150,7 @@ li {
 }
 
 .form_box {
-    background-color: #fafafa;
+    background-color: #fcfcfc;
     border-radius: 8%;
     display: flex;
     height: 470px;
@@ -166,7 +160,7 @@ li {
 }
  
 .form_box button {
-    background-color: #666060;
+    background-color: #4b4b4b;
     border: none;
     border-radius: 8px;
     color: #fffcfc;
@@ -183,7 +177,7 @@ li {
 }
 
 .form_box button:hover {
-    background-color: #000000;
+    background-color: #727272;
 }
 
 .form_box form {
@@ -198,7 +192,7 @@ li {
     border-radius: 8px;
     font-size: 16px;
     height: 40px;
-    margin: 16px;
+    margin: 12px;
     padding-left: 16px;
     width: calc(50% -8px);
 }
@@ -212,12 +206,12 @@ li {
 }
 
 .form_box input[name=nome], .form_box input[name=e-mail] {
-    width: 300px;
+    width: 308px;
 }
 
 .form_box textarea {
     height: 180px;
-    margin-top: 1%;
+    margin: 12px;
     padding: 16px;
     width: 100%;
 }
