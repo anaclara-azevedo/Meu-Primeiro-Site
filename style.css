@@ -13,12 +13,13 @@
 /* Estilização do Plano de Fundo */
 
 body {
-    background-color:#e6e6e6ab;
+    background-color:#e6e6e6;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     margin: auto;
     min-height: 100%;
+    scroll-behavior: smooth;
 }
 
 /* Estilização das tags a e do html */
@@ -26,11 +27,16 @@ body {
 a {
     color:rgba(59, 0, 197, 0.911);
     font-weight: 500;
-    text-align: center;
+    c
 }
 
 html { 
     height: 100%;
+    scroll-behavior: smooth;
+}
+
+iframe, img {
+    border-radius: 8px;
 }
 
 /* Estilização das legendas das imagens */
@@ -62,8 +68,9 @@ h1, h2 {
     color:#666060;
     font-size: 60px;
     font-weight: bolder;
-    margin-left: 35%;
-    margin-top: 4%;
+    margin-left: 29%;
+    margin-top: 6px;
+    padding: 16px;
     text-align: justify;
     width: 100%;
 }
@@ -81,7 +88,7 @@ h1, h2 {
     align-items: center;
     display: flex;
     justify-content: space-around;
-    margin: auto 40px;
+    margin: auto 30px;
 }
 
 .section1 {
@@ -99,6 +106,7 @@ h1, h2 {
     background-image: url("Imagens - Página Inicial/Alimentos Saudáveis.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 8px;
     height: 240px; 
     width: 500px;  
 }
@@ -108,25 +116,24 @@ h1, h2 {
     transition: 1.5s;
 }   
 
-.paragrafo1 {
+.paragrafo1, .paragrafo2 {
     font-size: 18px;
     text-align: justify;
     width: 50%;
 }
 
-.paragrafo2 {  
-    display: inline-block;
-    font-size: 18px;
-    text-align: justify;
-    width: 50%;
-}
-
-.section2, .section3, .section4 {
-    align-items: center;
+.section2, .section3 {
+    align-items: flex-start;
     display: flex;
     justify-content: center; 
 }
-            
+
+.section4 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
 /* Estilização da Section 4 */
 
 li {
@@ -229,18 +236,22 @@ li {
     display: flex;
     justify-content: center;
     margin-left: 3%;
+   
 }
 
 /* Botão voltar ao topo */
 
-.seta-topo {
-    align-items: center;
-    bottom: 5px;
-    color: #f1f1f1;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    right: 10px;
+#btnTopo {   
+    bottom: 20px; /* Distância do fundo da página */
+    background-color: #e6e6e6;
+    border-color: #727272;
+    border-style: solid;
+    border-radius: 8px;
+    cursor: pointer; /* Cursor ao passar */
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Fixa na tela */
+    right: 20px; /* Distância da borda direita */
+    z-index: 99; /* Posicionamento na pilha */
 }
 
 /* Estilização do Rodapé */
