@@ -61,6 +61,7 @@ h1, h2 {
     color: #000000;
     flex-direction: column;
     font-weight: 400;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -86,7 +87,7 @@ h1, h2 {
 }
 
 .li-menu {
-    margin: 0 30px;
+    margin: 0 40px;
 }
 
 .logo-cabecalho {
@@ -141,17 +142,17 @@ h1, h2 {
 .section4 {
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+    margin-left: 14px;
 }
 
 /* Estilização da Section 4 */
 
-li {
+.li-section4 {
     font-size: 19px;
     list-style: none;
     padding: 20px;
     text-align: center;
-    width: 100%;
 }
 
 /* Aba Contato */
@@ -252,16 +253,16 @@ li {
 /* Botão voltar ao topo */
 
 #btnTopo {   
-    bottom: 20px; /* Distância do final da página */
+    bottom: 20px; 
     background-color: #e6e6e6;
     border-color: #727272;
     border-style: solid;
     border-radius: 8px;
-    cursor: pointer; /* Cursor ao passar */
-    display: none; /* Inicialmente oculto */
-    position: fixed; /* Fixa na tela */
-    right: 20px; /* Distância da borda direita */
-    z-index: 99; /* Posicionamento na pilha */
+    cursor: pointer; 
+    display: none; 
+    position: fixed; 
+    right: 20px; 
+    z-index: 99; 
 }
 
 /* Estilização do Rodapé */
@@ -283,4 +284,3 @@ li {
     padding-top: 30px;
     text-align: center;
 }
-
