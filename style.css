@@ -50,14 +50,23 @@ figcaption {
 /* Estilização dos Títulos  */
 
 h1, h2 {
-    color:#727272;
+    color: #727272;
     text-align: center;
 }
 
 /* Estilização do Header */
 
+.a-menu {
+    display: flex;
+    color: #000000;
+    flex-direction: column;
+    font-weight: 400;
+    text-decoration: none;
+}
+
 .cabecalho {
     background-image: url("Imagens/Página Inicial/Alimentos.jpg");
+    background-position: top;
     background-repeat: no-repeat;
     background: cover;
     height: 100vh;
@@ -66,11 +75,11 @@ h1, h2 {
 }
 
 .engalimentos { 
-    color:#666060;
+    color: #666060;
     font-size: 60px;
     font-weight: bolder;
-    margin-left: 29%;
-    margin-top: 6px;
+    margin-left: 30%;
+    margin-top: 16px;
     padding: 16px;
     text-align: justify;
     width: 100%;
@@ -81,8 +90,8 @@ h1, h2 {
 }
 
 .logo-cabecalho {
-    height: 80px;
-    width: 80px;   
+    height: 85px;
+    width: 85px;   
 }
 
 .menu {
