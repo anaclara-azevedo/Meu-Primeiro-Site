@@ -22,11 +22,11 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Estilização das tags a e do html */
+/* Estilização da tag a, do html, da tag iframe e da tag img */
 
-a {
-    color:rgba(59, 0, 197, 0.911);
-    font-weight: 500;
+a { 
+    color: rgba(59, 0, 197, 0.911) ;
+    font-weight: 400;
 }
 
 html { 
@@ -36,7 +36,6 @@ html {
 
 iframe, img {
     border-radius: 8px;
-
 }
 
 /* Estilização das legendas das imagens */
@@ -58,7 +57,7 @@ h1, h2 {
 
 .a-menu {
     display: flex;
-    color: #000000;
+    color: #000000; 
     flex-direction: column;
     font-weight: 400;
     text-align: center;
@@ -140,19 +139,36 @@ h1, h2 {
 }
 
 .section4 {
-    align-items: center;
-    display: flex;
-    justify-content: center; 
-    margin-left: 14px;
+    display: flex;  
+    margin-left: 90px; 
+    margin-top: 40px;
 }
 
 /* Estilização da Section 4 */
 
+.a-section4 {
+    color: #fcfcfc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-section4 {
+    margin-left: 25px;
+}
+
 .li-section4 {
+    background-color: #727272;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #000000;
     font-size: 19px;
     list-style: none;
-    padding: 20px;
+    margin-top: 15px;
+    padding: 10px;
     text-align: center;
+}
+
+.li-section4:hover {
+    background-color: #464545;
 }
 
 /* Aba Contato */
@@ -178,9 +194,10 @@ h1, h2 {
 }
  
 .form_box button {
-    background-color: #4b4b4b;
+    background-color: #727272;
     border: none;
     border-radius: 8px;
+    box-shadow: 2px 2px 2px #000000;
     color: #fffcfc;
     cursor: pointer;
     display: block;
@@ -195,7 +212,7 @@ h1, h2 {
 }
 
 .form_box button:hover {
-    background-color: #727272;
+    background-color: #464545;
 }
 
 .form_box form {
