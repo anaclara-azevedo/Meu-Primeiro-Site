@@ -3,301 +3,309 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Estilização universal para a fonte */
+/* Estilização Universal */
 
 * {
     box-sizing: border-box;
-    font-family: "Bitter", serif;
+    font-family: "Bitter", serif; 
 }
 
 /* Estilização do Plano de Fundo */
 
 body {
-    background-color:#e6e6e6;
-    display: flex;
+    background-color:#e6e6e6; 
+    display: flex; /* Torna o elemento um contêiner flexível */
     flex-direction: column;
-    margin: 0;
-    min-height: 100vh;
-    padding: 0;
-    scroll-behavior: smooth;
+    margin: 0; 
+    min-height: 100vh; /* A altura mínima é 100% da altura da janela de visualização */
+    padding: 0; 
 }
 
 /* Estilização da tag a, do html, da tag iframe e da tag img */
 
 a { 
-    color: rgba(59, 0, 197, 0.911) ;
-    font-weight: 400;
+    color: rgba(59, 0, 197, 0.911); 
+    font-weight: 400; 
 }
 
 html { 
-    height: 100%;
-    scroll-behavior: smooth;
+    height: 100%; 
+    scroll-behavior: smooth; /* Rolamento da página suave */
 }
 
 iframe, img {
-    border-radius: 8px;
+    border-radius: 8px; 
 }
 
-/* Estilização das legendas das imagens */
+/* Estilização das Legendas das Imagens */
    
 figcaption { 
     font-size: 15px;
-    font-weight: 500;
-    text-align: center;
+    font-weight: 500; 
+    text-align: center; 
 }
 
-/* Estilização dos Títulos  */
+/* Estilização dos Títulos */
 
-h1, h2 {
-    color: #727272;
-    text-align: center;
+h1, h2 {  
+    color: #727272; 
+    text-align: center; 
 }
 
-/* Estilização do Header */
+/* Estilização do Cabeçalho */
 
-.a-menu {
-    display: flex;
+.a-menu { 
+    display: flex; 
     color: #000000; 
-    flex-direction: column;
-    font-weight: 400;
+    flex-direction: column; /* Utilizei a direção coluna para que os nomes dos ícones fiquem abaixo deles */
+    font-weight: 400; 
     text-align: center;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 .cabecalho {
     background-image: url("Imagens/Página Inicial/Alimentos.jpg");
-    background-position: top;
+    background-position: top; 
     background-repeat: no-repeat;
-    background: cover;
-    height: 100vh;
-    position: relative;
-    width: 100%;
+    background-size: cover; 
+    height: 100vh; 
+    position: relative; 
+    width: 100%; 
+    /* Estilização do cabeçalho principal com imagem de fundo (Apenas no arquivo index.html) */
 }
 
-.engalimentos { 
-    color: #666060;
-    font-size: 65px;
-    font-weight: bolder;
-    margin-left: 25%;
-    margin-top: 30px;
+.engalimentos {  
+    color: #666060; 
+    font-size: 65px; 
+    font-weight: bolder; 
+    margin-left: 25%; 
+    margin-top: 30px; 
     padding: 16px;
-    text-align: justify;
-    width: 100%;
+    text-align: justify; 
+    width: 100%; 
+    /* Título destacado sobre o assunto do site com imagem de fundo (Apenas no arquivo index.html) */
 }
 
 .li-menu {
-    margin: 0 40px;
+    margin: 0 40px;  
+    /* Itens do menu de navegação */
 }
 
-.logo-cabecalho {
+.logo-cabecalho { 
     height: 85px;
-    width: 85px;   
+    width: 85px; 
+    /* Logotipo do menu de navegação */
 }
 
-.menu {
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    margin: auto 30px;
+.menu { 
+    align-items: center; /* Utilizei essa configuração para deixar o logotipo e os ícones do menu centralizados */
+    display: flex; 
+    justify-content: space-around; /* Os itens ficam dispostos uniformemente nessa configuração */
+    margin: auto 30px; 
+    /* Tag nav */
 }
 
 .section1 {
-    position: absolute; /* Eu usei position absolute o título ficasse condicionado a header */
+    position: absolute; /* Posicionamento absoluto para o título ficar dentro do cabeçalho */
 }
 
-.ul-menu {
-    display: flex;
-    list-style: none;
+.ul-menu { 
+    display: flex; 
+    list-style: none; 
+    /* Itens do menu de navegação dispostos em lista */
 }
 
-/* Estilização da Section 2 e da Section 3 */
+/* Estilização da Section 2 e da Section 3 (Linhas 36 a 67 do arquivo index.html) */
 
-.alimentos { 
+.alimentos-saudaveis { 
     background-image: url("Imagens/Página Inicial/Alimentos Saudáveis.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 8px;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    border-radius: 8px; 
     height: 240px; 
-    width: 500px;  
+    width: 500px; 
 }
 
-.alimentos:hover { /* Troca de imagens ao passar o cursor em cima */
+.alimentos-saudaveis:hover { /* Troca de imagens ao passar o cursor em cima. Utilizei pseudoclasse para deixar o site mais interativo */
     background-image: url("Imagens/Página Inicial/Alimentos Saudáveis 2.jpg"); 
-    transition: 1.5s;
+    transition: 1.5s; /* Transição suave ao passar o mouse sobre a imagem */
 }   
 
 .paragrafo1, .paragrafo2 {
-    font-size: 18px;
-    text-align: justify;
-    width: 50%;
+    font-size: 18px; 
+    text-align: justify; 
+    width: 50%; /* Deixei em 50%, porque o espaçamento entre as imagens e os textos ficou mais harmônico dessa maneira */
 }
 
-.section2, .section3 {
-    align-items: flex-start;
-    display: flex;
-    justify-content: center; 
+.section2, .section3 { 
+    align-items: flex-start; /* Essa configuração deixa os elementos bem dispostos */
+    display: flex; 
+    justify-content: center;  
 }
 
-.section4 {
-    display: flex;  
-    margin-left: 90px; 
-    margin-top: 40px;
+/* Estilização da Section 4 (Linhas 71 a 91 do arquivo index.html) */
+
+.a-section4 {  
+    color: #fcfcfc;  
+    font-weight: bold; 
+    text-decoration: none; 
 }
 
-/* Estilização da Section 4 */
-
-.a-section4 {
-    color: #fcfcfc;
-    font-weight: bold;
-    text-decoration: none;
+.btn-section4 { 
+    margin-left: 25px; /* Espaçamento uniforme entre os botões com links externos e o vídeo */ 
 }
 
-.btn-section4 {
-    margin-left: 25px;
-}
-
-.li-section4 {
-    background-color: #727272;
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px #000000;
-    font-size: 19px;
-    list-style: none;
+.li-section4 { 
+    background-color: #727272; 
+    border-radius: 8px;  
+    box-shadow: 2px 2px 2px #000000; /* Sombreamento das bordas */
+    font-size: 19px; 
+    list-style: none; 
     margin-top: 15px;
     padding: 10px;
-    text-align: center;
+    text-align: center; 
+    /* Estilização dos botões com links externos dispostos em lista */
 }
 
-.li-section4:hover {
-    background-color: #464545;
+.li-section4:hover { /* Troca de cor de fundo ao passar o cursor sobre os botões. Utilizei pseudoclasse para deixar o site mais interativo */
+    background-color: #464545; 
 }
 
-/* Aba Contato */
+.section4 { 
+    display: flex;  
+    margin-left: 90px; 
+    margin-top: 40px; 
+}
+
+/* Aba Contato (Arquivo contato.html) */
 
 .form { 
-    align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content: center;
+    align-items: center; 
+    display: flex; 
+    height: 100%; 
+    justify-content: center;  
     margin-bottom: 40px;
-    padding: 20px;
-    width: 100%;
+    padding: 20px;  
+    width: 100%; 
+    /* Section que contém o formulário */
 }
 
-.form_box {
-    background-color: #fcfcfc;
-    border-radius: 8%;
+.form_box { 
+    background-color: #fcfcfc; 
+    border-radius: 8%; 
     display: flex;
-    height: 470px;
-    flex-direction: column;
-    padding: 15px;
-    width: 700px;
+    height: 470px;  
+    flex-direction: column;  
+    padding: 15px; 
+    width: 700px; 
+    /* Formulário */
 }
  
-.form_box button {
-    background-color: #727272;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px #000000;
-    color: #fffcfc;
-    cursor: pointer;
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-    height: 40px;
-    margin-left: 478px;
-    margin-top: 55%;
-    outline: none;
-    position: absolute;
-    width: 180px;
+.form_box button { 
+    background-color: #727272; 
+    border: none; 
+    border-radius: 8px; 
+    box-shadow: 2px 2px 2px #000000; 
+    color: #fffcfc; 
+    cursor: pointer; /* Mão clicável quando o usuário passar o cursor sobre o botão */
+    display: block; 
+    font-size: 16px; 
+    font-weight: bold; 
+    height: 40px; 
+    margin-left: 478px; 
+    margin-top: 55%; 
+    outline: none; 
+    position: absolute; /* Posicionamento absoluto para o botão ficar dentro do formulário */
+    width: 180px; 
+    /* Botão "Enviar formulário" */
 }
 
-.form_box button:hover {
-    background-color: #464545;
+.form_box button:hover { /* Troca de cor de fundo ao passar o cursor sobre o botão. Utilizei pseudoclasse para deixar o site mais interativo */
+    background-color: #464545; 
 }
 
 .form_box form {
-    align-items: center;
+    align-items: center; 
     display: flex;
-    flex-wrap: wrap;
-    position: relative;
+    flex-wrap: wrap; 
+    position: relative; /* Posicionamento relativo para conteúdo interno (Botão do formulário) */ 
 }
  
 .form_box input, .form_box textarea {
-    border: thin solide #cccc;
-    border-radius: 8px;
-    font-size: 16px;
-    height: 40px;
-    margin: 12px;
-    padding-left: 16px;
-    width: calc(50% -8px);
+    border: thin solide #cccc; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    height: 40px; 
+    margin: 12px; 
+    padding-left: 16px; 
+    width: calc(50% -8px); 
+    /* Elementos do formulário */
 }
 
-.form_box input:first-child {
-    margin-right: 16px;
+.form_box input:first-child { 
+    margin-right: 16px; 
+    /* O primeiro filho do input é name="nome" (Linha 36) */
 }
 
-.form_box input[name=assunto] {
+.form_box input[name=assunto] { 
+    width: 100%; 
+    /* Linha 40 */ 
+}
+
+.form_box input[name=nome], .form_box input[name=e-mail] {   
+    width: 308px; 
+    /* Linhas 36 e 38 */ 
+}
+
+.form_box textarea { 
+    height: 180px; 
+    margin: 12px; 
+    padding: 16px; 
     width: 100%;
+    /* Linha 42: espaço para o usuário escrever a mensagem */
 }
 
-.form_box input[name=nome], .form_box input[name=e-mail] {
-    width: 308px;
-}
+/* Aba Local (Arquivo local.html) */
 
-.form_box textarea {
-    height: 180px;
-    margin: 12px;
-    padding: 16px;
-    width: 100%;
-}
-
-.form_box .title {
-    border-bottom: thin solide #cccc;
-    font-size: 24px;
-    padding: 24px 32px;
-}
-
-/* Aba Local */
-
-.local {
-    align-items: baseline;
-    display: flex;
+.local { 
+    align-items: baseline; 
+    display: flex; 
     justify-content: center;
-    margin-left: 3%;
-   
+    /* Linha 28 a 39 */
 }
 
-/* Botão voltar ao topo */
+/* Botão voltar ao topo (Javascript) */
 
 #btnTopo {   
     bottom: 20px; 
-    background-color: #e6e6e6;
-    border-color: #727272;
-    border-style: solid;
-    border-radius: 8px;
+    background-color: #e6e6e6; 
+    border-color: #727272; 
+    border-style: solid; 
+    border-radius: 8px; 
     cursor: pointer; 
     display: none; 
     position: fixed; 
     right: 20px; 
-    z-index: 99; 
+    z-index: 99;
 }
 
 /* Estilização do Rodapé */
 
-.borboleta {  /* Fonte do ícone: https://www.flaticon.com/br/icone-gratis/borboleta_338337?term=borboleta+azul&page=1&position=1&origin=search&related_id=338337 */
-    height: 30px;
-    width: 30px;
+.borboleta { 
+    height: 30px; 
+    width: 30px; 
+    /* Fonte do ícone: https://www.flaticon.com/br/icone-gratis/borboleta_338337?term=borboleta+azul&page=1&position=1&origin=search&related_id=338337 */
 }
 
 .rodape {
-    align-items: center;
+    align-items: center; 
     color: #000000;
     display: flex;
-    font-size: 21px;
-    font-weight: 500;
-    gap: 10px;
-    justify-content: center;
-    margin-top: auto;
-    padding-top: 30px;
-    text-align: center;
+    font-size: 21px; 
+    font-weight: 500; 
+    gap: 10px; /* Lacuna entre a imagem que inseri no rodapé (Borboleta) e o meu nome */
+    justify-content: center; 
+    margin-top: auto; /* Para que o rodapé fique no fim da página */
+    padding-top: 30px; 
+    text-align: center; 
 }
