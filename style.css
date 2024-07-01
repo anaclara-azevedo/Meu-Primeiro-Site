@@ -15,7 +15,7 @@
 body {
     background-color:#e6e6e6; 
     display: flex; /* Torna o elemento um contêiner flexível */
-    flex-direction: column;
+    flex-direction: column; 
     margin: 0; 
     min-height: 100vh; /* A altura mínima é 100% da altura da janela de visualização */
     padding: 0; 
@@ -52,12 +52,12 @@ h1, h2 {
     text-align: center; 
 }
 
-/* Estilização do Cabeçalho */
+/* Estilização do Cabeçalho (Linhas 12 a 30) */
 
 .a-menu { 
     display: flex; 
     color: #000000; 
-    flex-direction: column; /* Utilizei a direção coluna para que os nomes dos ícones fiquem abaixo deles */
+    flex-direction: column; /* Para que os nomes dos ícones fiquem abaixo deles */
     font-weight: 400; 
     text-align: center;
     text-decoration: none; 
@@ -69,9 +69,9 @@ h1, h2 {
     background-repeat: no-repeat;
     background-size: cover; 
     height: 100vh; 
-    position: relative; 
+    position: relative; /* Posicionamento relativo para conteúdo interno (Título destacado) */
     width: 100%; 
-    /* Estilização do cabeçalho principal com imagem de fundo (Apenas no arquivo index.html) */
+    /* Estilização do cabeçalho com imagem de fundo (Apenas para o arquivo index.html) */
 }
 
 .engalimentos {  
@@ -83,7 +83,7 @@ h1, h2 {
     padding: 16px;
     text-align: justify; 
     width: 100%; 
-    /* Título destacado sobre o assunto do site com imagem de fundo (Apenas no arquivo index.html) */
+    /* Título destacado sobre o assunto do site com imagem de fundo (Apenas para o arquivo index.html) */
 }
 
 .li-menu {
@@ -98,7 +98,7 @@ h1, h2 {
 }
 
 .menu { 
-    align-items: center; /* Utilizei essa configuração para deixar o logotipo e os ícones do menu centralizados */
+    align-items: center; /*  Logotipo e os ícones do menu centralizados */
     display: flex; 
     justify-content: space-around; /* Os itens ficam dispostos uniformemente nessa configuração */
     margin: auto 30px; 
@@ -112,7 +112,7 @@ h1, h2 {
 .ul-menu { 
     display: flex; 
     list-style: none; 
-    /* Itens do menu de navegação dispostos em lista */
+    /* Itens do menu de navegação dispostos em uma lista não ordenada */
 }
 
 /* Estilização da Section 2 e da Section 3 (Linhas 36 a 67 do arquivo index.html) */
@@ -126,7 +126,7 @@ h1, h2 {
     width: 500px; 
 }
 
-.alimentos-saudaveis:hover { /* Troca de imagens ao passar o cursor em cima. Utilizei pseudoclasse para deixar o site mais interativo */
+.alimentos-saudaveis:hover { /* Troca de imagens ao passar o cursor em cima */
     background-image: url("Imagens/Página Inicial/Alimentos Saudáveis 2.jpg"); 
     transition: 1.5s; /* Transição suave ao passar o mouse sobre a imagem */
 }   
@@ -134,7 +134,7 @@ h1, h2 {
 .paragrafo1, .paragrafo2 {
     font-size: 18px; 
     text-align: justify; 
-    width: 50%; /* Deixei em 50%, porque o espaçamento entre as imagens e os textos ficou mais harmônico dessa maneira */
+    width: 50%; /* Espaçamento entre as imagens e os trechos de textos ficou mais harmônico dessa maneira */
 }
 
 .section2, .section3 { 
@@ -158,7 +158,7 @@ h1, h2 {
 .li-section4 { 
     background-color: #727272; 
     border-radius: 8px;  
-    box-shadow: 2px 2px 2px #000000; /* Sombreamento das bordas */
+    box-shadow: 2px 2px 2px #000000; /* Sombreamento das bordas dos botões */
     font-size: 19px; 
     list-style: none; 
     margin-top: 15px;
@@ -167,14 +167,14 @@ h1, h2 {
     /* Estilização dos botões com links externos dispostos em lista */
 }
 
-.li-section4:hover { /* Troca de cor de fundo ao passar o cursor sobre os botões. Utilizei pseudoclasse para deixar o site mais interativo */
+.li-section4:hover { /* Troca a cor de fundo ao passar o cursor sobre os botões */
     background-color: #464545; 
 }
 
 .section4 { 
     display: flex;  
-    margin-left: 90px; 
-    margin-top: 40px; 
+    margin-left: 90px;  
+    margin-top: 40px;
 }
 
 /* Aba Contato (Arquivo contato.html) */
@@ -220,7 +220,7 @@ h1, h2 {
     /* Botão "Enviar formulário" */
 }
 
-.form_box button:hover { /* Troca de cor de fundo ao passar o cursor sobre o botão. Utilizei pseudoclasse para deixar o site mais interativo */
+.form_box button:hover { /* Troca a cor de fundo ao passar o cursor sobre o botão */
     background-color: #464545; 
 }
 
@@ -282,11 +282,11 @@ h1, h2 {
     border-color: #727272; 
     border-style: solid; 
     border-radius: 8px; 
-    cursor: pointer; 
+    cursor: pointer; /* Mão clicável quando o usuário passar o cursor sobre o botão */
     display: none; 
     position: fixed; 
     right: 20px; 
-    z-index: 99;
+    z-index: 99; 
 }
 
 /* Estilização do Rodapé */
@@ -305,7 +305,7 @@ h1, h2 {
     font-weight: 500; 
     gap: 10px; /* Lacuna entre a imagem que inseri no rodapé (Borboleta) e o meu nome */
     justify-content: center; 
-    margin-top: auto; /* Para que o rodapé fique no fim da página */
+    margin-top: auto; /* Rodapé no fim da página */
     padding-top: 30px; 
     text-align: center; 
 }
