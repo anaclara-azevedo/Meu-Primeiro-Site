@@ -57,7 +57,7 @@ h1, h2 {
 .a-menu { 
     display: flex; 
     color: #000000; 
-    flex-direction: column; /* Para que os nomes dos ícones fiquem abaixo deles */
+    flex-direction: column; /* Nomes dos ícones fica abaixo deles nessa configuração */
     font-weight: 400; 
     text-align: center;
     text-decoration: none; 
@@ -72,6 +72,7 @@ h1, h2 {
     position: relative; /* Posicionamento relativo para conteúdo interno (Título destacado) */
     width: 100%; 
     /* Estilização do cabeçalho com imagem de fundo (Apenas para o arquivo index.html) */
+    /* Fonte da imagem: Freepik */
 }
 
 .engalimentos {  
@@ -98,21 +99,20 @@ h1, h2 {
 }
 
 .menu { 
-    align-items: center; /*  Logotipo e os ícones do menu centralizados */
+    align-items: center; /* Logotipo e os ícones do menu centralizados */
     display: flex; 
-    justify-content: space-around; /* Os itens ficam dispostos uniformemente nessa configuração */
+    justify-content: space-around; /* Os itens ficam bem dispostos nessa configuração */
     margin: auto 30px; 
-    /* Tag nav */
 }
 
 .section1 {
-    position: absolute; /* Posicionamento absoluto para o título ficar dentro do cabeçalho */
+    position: absolute; /* Posicionamento absoluto para o título ficar dentro dos limites do cabeçalho */
 }
 
 .ul-menu { 
     display: flex; 
     list-style: none; 
-    /* Itens do menu de navegação dispostos em uma lista não ordenada */
+    /* Lista não ordenada que dispõe os itens do menu de navegação */
 }
 
 /* Estilização da Section 2 e da Section 3 (Linhas 36 a 67 do arquivo index.html) */
@@ -124,21 +124,23 @@ h1, h2 {
     border-radius: 8px; 
     height: 240px; 
     width: 500px; 
+    /* Fonte da Imagem: Freepik */
 }
 
-.alimentos-saudaveis:hover { /* Troca de imagens ao passar o cursor em cima */
+.alimentos-saudaveis:hover { /* Troca as imagens ao passar o cursor em cima */
     background-image: url("Imagens/Página Inicial/Alimentos Saudáveis 2.jpg"); 
     transition: 1.5s; /* Transição suave ao passar o mouse sobre a imagem */
+    /* Fonte da Imagem: Freepik */
 }   
 
 .paragrafo1, .paragrafo2 {
     font-size: 18px; 
     text-align: justify; 
-    width: 50%; /* Espaçamento entre as imagens e os trechos de textos ficou mais harmônico dessa maneira */
+    width: 50%; /* Harmonia entre o espaçamento entre as imagens e os trechos de textos */
 }
 
 .section2, .section3 { 
-    align-items: flex-start; /* Essa configuração deixa os elementos bem dispostos */
+    align-items: flex-start; /* ELementos bem dispostos nessa configuração */
     display: flex; 
     justify-content: center;  
 }
@@ -152,7 +154,7 @@ h1, h2 {
 }
 
 .btn-section4 { 
-    margin-left: 25px; /* Espaçamento uniforme entre os botões com links externos e o vídeo */ 
+    margin-left: 25px; /* Espaçamento uniforme entre botões com links externos e o vídeo */ 
 }
 
 .li-section4 { 
@@ -198,7 +200,7 @@ h1, h2 {
     flex-direction: column;  
     padding: 15px; 
     width: 700px; 
-    /* Formulário */
+    /* Estrutura (Caixa) que contém os elementos do formulário */
 }
  
 .form_box button { 
@@ -207,7 +209,7 @@ h1, h2 {
     border-radius: 8px; 
     box-shadow: 2px 2px 2px #000000; 
     color: #fffcfc; 
-    cursor: pointer; /* Mão clicável quando o usuário passar o cursor sobre o botão */
+    cursor: pointer; /* Mão clicável ao passar o cursor sobre o botão */
     display: block; 
     font-size: 16px; 
     font-weight: bold; 
@@ -215,7 +217,7 @@ h1, h2 {
     margin-left: 478px; 
     margin-top: 55%; 
     outline: none; 
-    position: absolute; /* Posicionamento absoluto para o botão ficar dentro do formulário */
+    position: absolute; /* Posicionamento absoluto para o botão ficar dentro dos limites do formulário */
     width: 180px; 
     /* Botão "Enviar formulário" */
 }
@@ -229,6 +231,7 @@ h1, h2 {
     display: flex;
     flex-wrap: wrap; 
     position: relative; /* Posicionamento relativo para conteúdo interno (Botão do formulário) */ 
+    /* Linha 34 */
 }
  
 .form_box input, .form_box textarea {
@@ -271,7 +274,7 @@ h1, h2 {
     align-items: baseline; 
     display: flex; 
     justify-content: center;
-    /* Linha 28 a 39 */
+    /* Linhas 28 a 39 */
 }
 
 /* Botão voltar ao topo (Javascript) */
@@ -282,7 +285,7 @@ h1, h2 {
     border-color: #727272; 
     border-style: solid; 
     border-radius: 8px; 
-    cursor: pointer; /* Mão clicável quando o usuário passar o cursor sobre o botão */
+    cursor: pointer; /* Mão clicável ao passar o cursor sobre o botão */
     display: none; 
     position: fixed; 
     right: 20px; 
@@ -303,8 +306,8 @@ h1, h2 {
     display: flex;
     font-size: 21px; 
     font-weight: 500; 
-    gap: 10px; /* Lacuna entre a imagem que inseri no rodapé (Borboleta) e o meu nome */
-    justify-content: center; 
+    gap: 10px; /* Lacuna entre a imagem do rodapé (Borboleta) e o nome */
+    justify-content: center;  
     margin-top: auto; /* Rodapé no fim da página */
     padding-top: 30px; 
     text-align: center; 
