@@ -117,21 +117,11 @@ h1, h2 {
 
 /* Estilização da Section 2 e da Section 3 (Linhas 36 a 67 do arquivo index.html) */
 
-.alimentos-saudaveis { 
-    background-image: url("Imagens/Página Inicial/Alimentos Saudáveis.jpg");
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    border-radius: 8px; 
-    height: 240px; 
+.alimentos-saudaveis, .alimentos-saudaveis img { 
+    height: 240px;
     width: 500px; 
-    /* Fonte da Imagem: Freepik */
+    /* Fonte da Imagens: Freepik */
 }
-
-.alimentos-saudaveis:hover { /* Troca as imagens ao passar o cursor em cima */
-    background-image: url("Imagens/Página Inicial/Alimentos Saudáveis 2.jpg"); 
-    transition: 1.5s; /* Transição suave ao passar o mouse sobre a imagem */
-    /* Fonte da Imagem: Freepik */
-}   
 
 .paragrafo1, .paragrafo2 {
     font-size: 18px; 
